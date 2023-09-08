@@ -1,6 +1,6 @@
 import Head from "next/head";
 import "../styles/globals.css";
-import index from "./index";
+
 
 //internal
 import { StateContextProvider } from "../Context/index";
@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
   <link ref= 'icon' href = "assets/imgaes/favicon.png"></link>
 
 </Head>
-<index/>
+
 
 <StateContextProvider>
 <Component {...pageProps} />

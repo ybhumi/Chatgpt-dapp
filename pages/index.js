@@ -5,10 +5,13 @@ import { useStateContext } from '../Context/index'
 const index = () => {
 
   //state management
-  const {DAPP_NAME} = useStateContext();
+  const {DAPP_NAME, listMembership} = useStateContext();
 
   return (
-    <div className='icon-custom'>{DAPP_NAME}</div>
+    <div className='icon-custom'>
+    <p>{DAPP_NAME}</p>
+    <button onClick={() => listMembership}>LIST MEMBERSHIP</button>
+    </div>
   )
 }
 
